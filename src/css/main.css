@@ -12,6 +12,69 @@ video {
   padding-right: 1rem;
 }
 
+.step {
+  height: 80vh;
+  width: auto;
+  position: relative;
+  bottom: -10vh;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.step-page {
+  background-image: url("../images/Background-steps.png");
+  background-size: cover;
+}
+
+.boxes {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -5vw;
+}
+
+.step-words {
+  min-height: 10vh;
+  height: fit-content;
+  width: 40vw;
+  background-color: #f6f2f0;
+  border-radius: 23px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  text-align: center;
+  font-size: xx-large;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom: 8vh;
+  font-family: Helvetica;
+  color: #4c5844;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.step-words > p {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -26,34 +89,6 @@ video {
   height: 100vh;
 }
 
-#rope {
-  background-image: url("../images/Background-steps.png");
-  background-size: cover;
-  height: 100vh;
-}
-
-#wrapper .instructions {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #fe4408;
-  height: fit-content;
-  width: fit-content;
-  text-align: center;
-  border-radius: 92px;
-  box-shadow: rgba(149, 157, 165, 0.2) 5px 5px 12px;
-  color: aliceblue;
-  font-family: Helvetica;
-  font-style: bold;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  max-width: 30%;
-  white-space: normal;
-}
-
 #homeknot {
   display: flex;
   flex-direction: column;
@@ -62,8 +97,55 @@ video {
   height: 90vh;
 }
 
-.horizontal-knot {
+#trial {
+  background-color: #4c5844;
+}
+
+#end-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  justify-content: center;
+}
+
+#end {
+  background-image: url("../images/Final-background-notitle.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+#endknot {
   padding-left: 3rem;
+}
+
+#wrapper .instructions1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fe4408;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  border-radius: 23px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  color: aliceblue;
+  font-family: Helvetica;
+  font-style: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 40vw;
+  white-space: normal;
+  margin-top: 2rem;
+}
+
+.slide-instructions {
+  position: absolute;
+  bottom: 18vh;
 }
 
 .sources {
