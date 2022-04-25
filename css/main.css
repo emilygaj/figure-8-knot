@@ -6,13 +6,80 @@ video {
   height: auto;
 }
 
-#home {
-  background-image: url("/src/images/Final-background-notitle.png");
+.restart {
+  width: auto;
+  height: 3.5rem;
+  padding-right: 1rem;
 }
 
-.restart {
-  width: 5%;
-  height: 5%;
-  padding-left: 1rem;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+#home {
+  background-image: url("../images/Final-background-notitle.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+#rope {
+  background-image: url("../images/Final-background-notitle.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+#wrapper .instructions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fe4408;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  border-radius: 92px;
+  box-shadow: rgba(149, 157, 165, 0.2) 5px 5px 12px;
+  color: aliceblue;
+  font-family: Helvetica;
+  font-style: bold;
   padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 30%;
+  white-space: normal;
+}
+
+#homeknot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.sources {
+  height: 2rem;
+  width: auto;
+  padding-left: 1rem;
+}
+
+#wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#wrapper .slide {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.title {
+  max-width: 60rem;
+  height: auto;
 }
