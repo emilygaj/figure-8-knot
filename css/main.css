@@ -115,6 +115,7 @@ video {
   height: 100vh;
 }
 
+.horizontal-knot,
 #endknot {
   padding-left: 3rem;
 }
