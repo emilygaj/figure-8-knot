@@ -12,11 +12,35 @@ video {
   padding-right: 1rem;
 }
 
-.step {
+.ropes {
+  width: fit-content;
+  height: 80vh;
+  position: relative;
+  display: inline-block;
+  bottom: -10vh;
+}
+
+.ropes .step {
   height: 80vh;
   width: auto;
-  position: relative;
+}
+
+.ropes .hstep {
+  display: none;
+  position: absolute;
+  height: 80vh;
+  width: auto;
   bottom: -10vh;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.ropes:hover .hstep {
+  display: inline;
+}
+
+.ropes:hover .step {
+  opacity: 0;
 }
 
 .slide {
@@ -28,7 +52,7 @@ video {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .step-page {
@@ -42,13 +66,10 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  right: -5vw;
 }
 
 .step-words {
-  min-height: 10vh;
-  height: fit-content;
+  height: 45vh;
   width: 40vw;
   background-color: #f6f2f0;
   border-radius: 23px;
@@ -59,20 +80,19 @@ video {
   white-space: normal;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
   bottom: 8vh;
   font-family: Helvetica;
   color: #4c5844;
   font-weight: 400;
-  font-style: italic;
-}
-
-.step-words > p {
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+}
+
+.hoverto {
+  font-size: medium;
+  font-style: italic;
 }
 
 .navbar {
@@ -142,11 +162,6 @@ video {
   max-width: 40vw;
   white-space: normal;
   margin-top: 2rem;
-}
-
-.slide-instructions {
-  position: absolute;
-  bottom: 18vh;
 }
 
 .sources {
