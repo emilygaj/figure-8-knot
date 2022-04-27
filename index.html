@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
     <title>Figure 8 Follow Through</title>
   </head>
   <body>
@@ -495,6 +506,31 @@
               <i>CLICK ON YOUR KNOT TO RESTART.</i></b
             >
           </p>
+        </div>
+      </div>
+      <div class="slide" id="todo-page">
+        <div class="navbar">
+          <img class="sources" src="./images/sources-icon.png" alt="" />
+          <img class="title" src="./images/8knot-title 2.png" alt="" />
+          <a href="#home"
+            ><img class="restart" src="./images/Restart-icon.png" alt=""
+          /></a>
+        </div>
+        <div id="todo-content">
+          <div id="todo-head" class="header">
+            <h2>My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Title..." />
+            <button onclick="newElement()" class="addBtn">Add</button>
+          </div>
+
+          <ul id="todo">
+            <li class="checked">Hit the gym</li>
+            <li class="checked">Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
+          </ul>
         </div>
       </div>
     </div>
