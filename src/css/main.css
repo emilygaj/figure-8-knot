@@ -24,6 +24,27 @@ a {
   bottom: -10vh;
 }
 
+.ropes img {
+  height: 80vh;
+  width: fit-content;
+}
+
+.ropes .step {
+  height: 80vh;
+  width: auto;
+}
+
+.ropes .hstep {
+  display: none;
+  position: absolute;
+  height: 80vh;
+  width: auto;
+  bottom: -10vh;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
 .ropes .step {
   height: 80vh;
   width: auto;
@@ -48,6 +69,10 @@ a {
 .ropes:hover .step {
   opacity: 0;
   transition: opacity 0.2s;
+}
+
+.sources {
+  cursor: pointer;
 }
 
 .slide {
@@ -170,6 +195,7 @@ a {
 }
 
 .sources {
+  position: fixed;
   height: 4rem;
   width: 8rem;
   margin-left: 1rem;
@@ -202,12 +228,13 @@ a {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 0;
+  margin: 0;
+  padding: 30vh 0 0 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.29);
 }
 
 .modal-content {
@@ -215,6 +242,7 @@ a {
   margin: 15% auto;
   padding: 20px;
   width: 40vw;
+  opacity: 1;
 }
 
 span.close {
@@ -250,6 +278,7 @@ span.close {
   padding: 1rem;
   text-decoration: none;
   font-family: Helvetica;
+  white-space: normal;
 }
 
 .modal-footer {
@@ -271,7 +300,8 @@ span.close {
   padding: 0;
   border-radius: 23px;
   width: 40vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
@@ -284,5 +314,25 @@ span.close {
   to {
     top: 0;
     opacity: 1;
+  }
+}
+
+@media (max-width: 48em) {
+  .step-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+  }
+  #wrapper {
+    overflow-x: scroll;
+    overflow-y: visible;
+    white-space: nowrap;
+  }
+  .step-page {
+    background-image: url("../images/Background-steps.png");
+    background-position: center;
+    background-repeat: repeat-y;
   }
 }
