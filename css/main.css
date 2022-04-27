@@ -12,6 +12,10 @@ video {
   padding-right: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .ropes {
   width: fit-content;
   height: 80vh;
@@ -35,12 +39,15 @@ video {
   left: 0;
   z-index: 99;
 }
+
 .ropes:hover .hstep {
   display: inline;
+  transition: display 0.2s;
 }
 
 .ropes:hover .step {
   opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .slide {
@@ -61,6 +68,7 @@ video {
 }
 
 .boxes {
+  margin-top: 2%;
   height: 80vh;
   display: flex;
   flex-direction: column;
