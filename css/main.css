@@ -201,6 +201,7 @@ a {
   margin-left: 1rem;
   background-color: transparent;
   border: none;
+  z-index: 1;
 }
 
 .sources-icon {
@@ -318,11 +319,15 @@ span.close {
 }
 
 @media (max-width: 48em) {
+  .sources {
+    position: relative;
+  }
+
   .step-content {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: fit-content;
   }
   #wrapper {
@@ -333,6 +338,26 @@ span.close {
   .step-page {
     background-image: url("../images/Background-steps.png");
     background-position: center;
-    background-repeat: repeat-y;
+    background-attachment: fixed;
+  }
+
+  .boxes {
+    background-color: transparent;
+  }
+
+  .hoverto {
+    display: none;
+  }
+
+  .step-words {
+    font-size: small;
+    width: 80vw;
+    height: 20vh;
+    z-index: 100;
+    padding-top: 0;
+  }
+
+  .navbar {
+    width: 100vw;
   }
 }
